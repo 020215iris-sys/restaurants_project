@@ -2,6 +2,7 @@
 from restaurants.korean import get_korean
 from restaurants.snack import get_snack
 from restaurants.cafe import get_cafe
+from restaurants.western import get_western_food
 
 def print_menu():
     print("=" * 40)
@@ -12,6 +13,7 @@ def print_menu():
         ("🍚 한식", get_korean()),
         ("🥟 분식", get_snack()),
         ("☕ 카페", get_cafe()),
+        ("🍝 양식", get_western_food())
     ]
 
     total = 0
