@@ -1,0 +1,8 @@
+[
+  {"name": "할머니 김치찌개", "category": "한식", "rating": 4.5, "price": 8000},
+  {"name": "원조 불고기", "category": "한식", "rating": 4.2, "price": 15000},
+  {"name": "떡볶이 천국", "category": "분식", "rating": 4.7, "price": 4000},
+  {"name": "김밥 한줄", "category": "분식", "rating": 4.0, "price": 3500},
+  {"name": "별빛 카페", "category": "카페", "rating": 4.3, "price": 5500},
+  {"name": "도서관 카페", "category": "카페", "rating": 4.8, "price": 6000}
+]
