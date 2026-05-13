@@ -25,7 +25,3 @@ def best_rated(restaurants: list[Restaurant]) -> Restaurant | None:
 def count_by_category(restaurants: list[Restaurant]) -> dict[str, int]:
     """카테고리별 가게 수를 dict로 반환한다."""
     return dict(Counter(r.category for r in restaurants))
-
-def average_price(restaurants: list[Restaurant]) -> int:
-    """평균 가격 계산 (일부러 에러가 나게 만든 함수)"""
-    return sum(r.price for r in restaurants) / len(restaurants)
