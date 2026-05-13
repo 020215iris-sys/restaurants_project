@@ -1,7 +1,7 @@
 # main.py
 from services.data_manager import load_restaurants
 from services.search import search_by_name, filter_by_category, filter_by_min_rating
-from services.stats import total_count, average_rating, best_rated, count_by_category
+from services.stats import total_count, average_rating, best_rated, count_by_category, average_price
 
 
 def show_all(restaurants):
@@ -14,6 +14,7 @@ def show_stats(restaurants):
     print("\n📊 통계 결과")
     print(f"  • 전체 가게 수: {total_count(restaurants)}개")
     print(f"  • 평균 평점: {average_rating(restaurants)}")
+    print(f"  • 평균 가격: {average_price(restaurants):,}원")
     best = best_rated(restaurants)
     if best:
         print(f"  • 최고 평점: {best.name} (⭐{best.rating})")
