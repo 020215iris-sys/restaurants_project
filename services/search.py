@@ -2,7 +2,7 @@
 from models.restaurant import Restaurant
 
 
-def searh_by_name(restaurants: list[Restaurant], keyword: str) -> list[Restaurant]:
+def search_by_name(restaurants: list[Restaurant], keyword: str) -> list[Restaurant]:
     """이름에 keyword가 포함된 가게를 반환한다."""
     keyword = keyword.lower()
     return [r for r in restaurants if keyword in r.name.lower()]
